@@ -14,13 +14,13 @@ WAIT_TIME = 1
 def main():
     driver = webdriver.Firefox()
 
-    driver.get("http://0976baee8833.ngrok.io/index.php")
+    driver.get("https://localhost:5242/index.php")
     driver.set_window_size(1200, 833)
 
     WebDriverWait(driver, LOADING_TIMEOUT).until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-389 > .dropdown-item"))).click()
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-1653 > .dropdown-item"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-389 > .dropdown-item"))).click()
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-1653 > .dropdown-item"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, ".product-miniature:nth-child(1) img"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
@@ -32,7 +32,7 @@ def main():
 
     time.sleep(WAIT_TIME)
     WebDriverWait(driver, LOADING_TIMEOUT).until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-399 > .dropdown-item"))).click()
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-1700 > .dropdown-item"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, ".product-miniature:nth-child(1) img"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
@@ -44,7 +44,7 @@ def main():
 
     time.sleep(WAIT_TIME)
     WebDriverWait(driver, LOADING_TIMEOUT).until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-422 > .dropdown-item"))).click()
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-1686 > .dropdown-item"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, ".product-miniature:nth-child(2) img"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
@@ -58,7 +58,7 @@ def main():
 
     time.sleep(WAIT_TIME)
     WebDriverWait(driver, LOADING_TIMEOUT).until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-389 > .dropdown-item"))).click()
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-1653 > .dropdown-item"))).click()
 
     driver.find_element(By.LINK_TEXT, "Tworzenie gier").click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
@@ -72,7 +72,7 @@ def main():
 
     time.sleep(WAIT_TIME)
     WebDriverWait(driver, LOADING_TIMEOUT).until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-389 > .dropdown-item"))).click()
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-1653 > .dropdown-item"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, ".product-miniature:nth-child(5) img"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
@@ -96,7 +96,7 @@ def main():
 
     time.sleep(WAIT_TIME)
     WebDriverWait(driver, LOADING_TIMEOUT).until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-436 > .dropdown-item"))).click()
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-1686 > .dropdown-item"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, ".product-miniature:nth-child(2) img"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
@@ -110,7 +110,7 @@ def main():
     WebDriverWait(driver, LOADING_TIMEOUT).until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, ".header .hidden-sm-down"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-389 > .dropdown-item"))).click()
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-1653 > .dropdown-item"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, ".product-miniature:nth-child(8) img"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
@@ -120,7 +120,7 @@ def main():
 
     time.sleep(WAIT_TIME)
     WebDriverWait(driver, LOADING_TIMEOUT).until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-408 > .dropdown-item"))).click()
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-1672 > .dropdown-item"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, ".product-miniature:nth-child(8) img"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
@@ -135,7 +135,7 @@ def main():
 
     time.sleep(WAIT_TIME)
     WebDriverWait(driver, LOADING_TIMEOUT).until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-389 > .dropdown-item"))).click()
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#category-1653 > .dropdown-item"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
         EC.visibility_of_element_located((By.CSS_SELECTOR, ".product-miniature:nth-child(7) img"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
@@ -195,7 +195,7 @@ def main():
     WebDriverWait(driver, LOADING_TIMEOUT).until(
         EC.visibility_of_element_located((By.NAME, "confirmDeliveryOption"))).click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, "#payment-option-2-container > label > span"))).click()
+        EC.visibility_of_element_located((By.CSS_SELECTOR, "#payment-option-1-container > label > span"))).click()
 
     driver.find_element(By.ID, "conditions_to_approve[terms-and-conditions]").click()
     WebDriverWait(driver, LOADING_TIMEOUT).until(
